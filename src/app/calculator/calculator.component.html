@@ -1,0 +1,8 @@
+<section class="container">
+  <div id="display">{{ displayValue }}</div>
+  <div class="buttons">
+    <div *ngFor="let buttonLabel of buttons" class="button" (click)="changeInnerHTML(buttonLabel)">
+      {{ buttonLabel }}
+    </div>
+  </div>
+</section>
